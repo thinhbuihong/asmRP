@@ -1,8 +1,8 @@
 let statelist = document.getElementById("states");
 chrome.storage.sync.get(["states"], res => {
   for (state in res.states) {
-    statelist.innerHTML += "<li>" + state + "<button id='remove'>Remove</button>";
-    document.getElementById("remove").addEventListener("click", () => remove(state));
+    statelist.innerHTML += "<li>" + state + "<button class='remove'>Remove</button>";
+    document.getElementsByClassName("remove")[0].addEventListener("click", () => remove(state));
   }
   function remove(state) {
     let states = res.states;

@@ -8,23 +8,28 @@
   <link rel="stylesheet" href="./popup.css">
 </head>
 
-<body>
+<body id="addstate">
   <h1>ADD STATE</h1>
-  <button><a href="popup.html">Home</a></button>
-  <button><a href="managestate.html">Manage State</a></button>
+  <button><a href="./popup.html">Home</a></button>
+  <button><a href="./managestate.html">Manage State</a></button>
+  <hr>
 
   <form>
-    <label for="#namestate">Name: </label>
-    <input type="text" name="namestate" id="namestate">
+    <div>
+      <label for="#namestate">Name: </label>
+      <input type="text" name="namestate" id="namestate">
+    </div>
 
-    <label for="#url">Website will be blocked: </label>
-    <input type="text" name="url" id="url">
+    <div>
+      <label for="#url">Website will be blocked: </label>
+      <input type="text" name="url" id="url">
+    </div>
     <button id="addurl">Add website</button>
+
     <br>
     <button id="addstate">Add</button>
 
     <ul id="websblock"></ul>
-
   </form>
   <script src="addstate.js"></script>
 </body>

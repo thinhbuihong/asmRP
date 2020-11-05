@@ -28,16 +28,3 @@ const stopState = () => {
 }
 start.addEventListener("click", startState)
 stop.addEventListener("click", stopState)
-
-
-  // findAllURL = (text) => {
-  //   var current = window.location.href;
-  //   if (current.startsWith(text)) {
-  //     document.documentElement.innerHTML = '';
-  //     document.documentElement.innerHTML = 'Domain is blocked';
-  //     document.documentElement.scrollTop = 0;
-  //   }
-
-  // }
-  // findAllURL("facebook.com")
-// }

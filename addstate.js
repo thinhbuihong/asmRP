@@ -3,8 +3,10 @@ function addurl(e) {
   let url = document.getElementById("url");
   let list = document.getElementById("websblock");
 
-  list.innerHTML += "<li>" + url.value;
-  url.value = "";
+  if (url.value) {
+    list.innerHTML += "<li>" + url.value;
+    url.value = "";
+  }
 }
 document.getElementById("addurl").addEventListener("click", addurl);
 
@@ -12,9 +14,13 @@ function addstate(e) {
   e.preventDefault();
   let namestate = document.getElementById("namestate");
   let list = document.getElementById("websblock");
+  let listurl = list.getElementsByTagName("li");
+
+  if (!(namestate.value && listurl.length > 0)) {
+    return;
+  }
 
   function ar() {
-    let listurl = list.getElementsByTagName("li");
     let u = [];
     for (i = 0; i < listurl.length; i++) {
       u.push(listurl[i].innerText);

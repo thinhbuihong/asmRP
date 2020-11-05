@@ -16,6 +16,5 @@
     "js": ["content.js"],
     "matches": ["http://*/*", "https://*/*"]
   }],
-  "permissions": ["storage", "notifications"],
-  "options_page": "options.html"
+  "permissions": ["storage", "notifications"]
 }

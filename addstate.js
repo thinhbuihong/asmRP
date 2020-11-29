@@ -42,4 +42,5 @@ function addstate(e) {
     })
   })
 }
-document.getElementById("addstate").addEventListener("click", addstate);
+document.getElementById("addstatebutton").addEventListener("click", addstate);
+
